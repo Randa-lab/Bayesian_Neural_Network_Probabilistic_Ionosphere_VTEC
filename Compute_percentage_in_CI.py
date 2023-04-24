@@ -6,7 +6,8 @@ def compute_percentage_in_CI (y_test, y_pred_upper, y_pred_lower):
   diff_up = y_pred_upper - y_test
   diff_low = y_pred_lower - y_test
   
-  in_values=0; out_values=0
+  in_values=0
+  out_values=0
   
   for i in range(diff_up.size):
     if np.any((diff_up[i] >= 0) & (diff_low[i] <= 0)):
