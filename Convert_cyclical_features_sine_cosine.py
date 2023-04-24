@@ -1,6 +1,6 @@
 import numpy as np
 
-#Converting the cyclic continuous features into sine and cosine
+#Converting the cyclical continuous features into sine and cosine
 
 def transform_sine_cosine (data_frame, input_col_h, input_col_d,
                            new_col_h_sin, new_col_h_cos,
